@@ -19,7 +19,10 @@
  *= require_self
  *= require dropzone/dropzone
  */
-#signup-newsletter-form{
+/*#signup-newsletter-form{
+	display: none;
+}*/
+.newsletter-field{
 	display: none;
 }
 img.image{

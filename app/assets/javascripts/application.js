@@ -18,7 +18,7 @@
 $(function(){
 	$('.signup-newsletter-btn').click(function(event){
 		$(this).hide();
-		$('#signup-newsletter-form').show();
+		$('#newsletter').show();
 		event.preventDefault();
 	})
 })
