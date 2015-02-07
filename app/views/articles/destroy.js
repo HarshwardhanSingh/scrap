@@ -1,0 +1,1 @@
+$('div.article[data-id=<%= @article.id %>]').fadeOut('slow').remove();

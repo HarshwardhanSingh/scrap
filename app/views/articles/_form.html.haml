@@ -1,0 +1,7 @@
+= simple_form_for @article,html:{multipart: true} do |f|
+	.form-group
+		= f.input :photo,input_html:{class: 'form-control dropzone'}
+	.form-group
+		= f.input :story,label: false,input_html:{class: 'form-control',placeholder: 'Story'}
+	.form-group
+		= f.submit "Create story",class: 'btn btn-default'

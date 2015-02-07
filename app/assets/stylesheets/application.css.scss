@@ -1,0 +1,123 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,400,600);
+@import url(http://fonts.googleapis.com/css?family=Satisfy);
+/*@import "dropzone";*/
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require dropzone/dropzone
+ */
+#signup-newsletter-form{
+	display: none;
+}
+img.image{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.hint{
+	font-style: italic;
+	font-weight: lighter;
+}
+body{
+	font-weight: 400;
+	margin-top: 80px;
+	background-color: #f8f8f8;
+	font-family: 'Source Sans Pro', sans-serif;
+	a{
+		color: black;
+		opacity: 0.8;
+		a:hover{
+			color:black;
+			text-decoration: none;
+		}
+	}
+}
+.navbar-default{
+	background-color: #ffffff;
+	.brand{
+		margin-left: auto;
+		margin-right: auto;
+		width: 100px;
+		font-size: 2.8em;
+		text-align: center;
+		.logo{
+			font-family: 'Satisfy', cursive;
+			font-weight: 400;
+			a:hover{
+				text-decoration:none;
+			}
+		}
+	}
+}
+.brand{
+	font-family: 'Satisfy', cursive;
+	font-weight: 400;
+	font-size: 2.8em;
+}
+.btn{
+	border-radius: 2em;
+}
+a:hover.btn-custom{
+	color: #068D92;
+	border-color: #068D92;
+	font-size: 1.1em;
+}
+p.story{
+	font-size: 1.1em;
+}
+.subscribe{
+	width: 400px;
+	text-align: center;
+}
+.signup, .signin{
+	width: 400px;
+}
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+.parent{
+	width: 600px;
+}
+.article{
+	width: 100%;
+	padding: 20px;
+	/*text-align: center;*/
+}
+.photo{
+	width: 300px;
+}
+.article-form{
+	width: 500px;
+}
+.bttn:hover{
+	background-color: white;
+	color: #068D92;
+	border-color: #068D92;
+	font-size: 1.1em;
+}
+.btn-delete:hover{
+	background-color: white;
+	font-size: 1.1em;
+	color: #BC0A0A;
+	border-color: #BC0A0A;
+}
+.random{
+	float: right;
+	width: 100%;
+	padding:20px;
+}
+

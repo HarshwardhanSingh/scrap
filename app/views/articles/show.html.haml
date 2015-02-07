@@ -1,0 +1,21 @@
+.row
+	.col-md-10.col-md-offset-1
+		.article.center.panel.panel-default
+			= image_tag @article.photo.url(:large),class: 'image img-responsive'
+			%hr
+			%p.story
+				= @article.story
+		- if admin_signed_in?
+			%hr
+				= link_to "Edit",edit_article_path(@article),class: 'btn btn-default'
+				= link_to "Delete",article_path(@article),method: :delete,data:{confirm: "Are you sure??"},class: 'btn btn-default'
+	/ .col-xs-2
+	/ 	%h3 Random Scrap
+	/ 	%hr
+	/ 	.random.center.panel.panel-default
+	/ 		.photo.center
+	/ 			= image_tag @random.photo.url(:medium),class: 'panel'
+	/ 		%hr
+	/ 		%p.story
+	/ 			= truncate @article.story, length: 160
+	/ 	%hr

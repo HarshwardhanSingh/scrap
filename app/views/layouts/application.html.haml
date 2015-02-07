@@ -1,0 +1,16 @@
+!!! 5
+%html
+%head
+	%title Scrap
+	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+	= stylesheet_link_tag    'http://fonts.googleapis.com/css?family=Open+Sans', media: 'all', 'data-turbolinks-track' => true 
+	= javascript_include_tag 'application', 'data-turbolinks-track' => true
+	= csrf_meta_tags 
+%body
+	%nav.navbar.navbar-default.navbar-fixed-top
+		.container
+			- if request.original_url!="http://localhost:3000/" 
+				.brand.center
+					= link_to "Scrap",root_path,class: 'logo'
+	.container
+		= yield 

@@ -1,0 +1,10 @@
+.article.panel.panel-default{data:{id: article.id}}
+	.row
+		.col-md-10
+			%p.image
+				= link_to (image_tag article.photo.url(:medium),class: 'img-rounded img-responsive'),article_path(article)
+			%p.story
+				= article.story
+		- if admin_signed_in?
+			.col-md-2
+				= link_to "Delete",article_path(article),method: :delete,data:{confirm: "Are you sure??"},class: 'btn btn-default btn-delete',remote: true
